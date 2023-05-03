@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Crypto Tracker</string>
+
+    <string name="push_title">Attention</string>
+    <string name="push_less_message">The crypto %1$s\'s value is more than the maximum rate you have set.</string>
+    <string name="push_more_message">The crypto %1$s\'s value is less than the minimum rate you have set.</string>
+    <string name="max_rate">Max rate</string>
+    <string name="min_rate">Min rate</string>
+    <string name="max_hint">999.99…</string>
+    <string name="min_hint">0.01…</string>
+    <string name="submit_success">Data saved successfully!</string>
+
+</resources>

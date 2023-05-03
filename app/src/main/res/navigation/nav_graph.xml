@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.task.cryptotracker.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_home_fragment_to_currency_fragment"
+            app:destination="@id/currency_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/currency_fragment"
+        android:name="com.task.cryptotracker.currency.CurrencyFragment"
+        android:label="CurrencyFragment" >
+        <argument
+            android:name="currencyName"
+            app:argType="string" />
+        <argument
+            android:name="currencyAmount"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_currency_fragment_to_currency_history_fragment"
+            app:destination="@id/currency_history_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/currency_history_fragment"
+        android:name="com.task.cryptotracker.currency_history.CurrencyHistoryFragment"
+        android:label="CurrencyHistoryFragment">
+        <argument
+            android:name="currencyName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
